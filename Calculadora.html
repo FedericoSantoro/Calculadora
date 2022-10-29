@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Calculadora.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="principal">
+      <form action="" class="calculadora" id="calculadora">
+        <p class="pantalla" id="pantalla">0</p>
+        <br />
+        <div class="borrar fila">
+            <input type="button" class="retroceso botonPrimero" id="retroceso" value="Retroceso">
+          <input type="button" class="CE botonPrimero" id="CE" value="CE" />
+          <input type="button" class="C botonPrimero" id="C" value="C" />
+        </div>
+        <br />
+        <div class="primeraFila fila">
+          <input type="button" class="siete boton" id="siete" value="7" />
+          <input type="button" class="ocho boton" id="ocho" value="8" />
+          <input type="button" class="nueve boton" id="nueve" value="9" />
+          <input type="button" class="divide boton" id="divide" value="/" />
+          <input type="button" class="raiz boton" id="raiz" value="Raiz" />
+        </div>
+        <br />
+        <div class="segundaFila fila">
+          <input type="button" class="cuatro boton" id="cuatro" value="4" />
+          <input type="button" class="cinco boton" id="cinco" value="5" />
+          <input type="button" class="seis boton" id="seis" value="6" />
+          <input type="button" class="por boton" id="por" value="*" />
+          <input type="button" class="porciento boton" id="porcentaje" value="%" />
+        </div>
+        <br />
+        <div class="terceraFila fila">
+          <input type="button" class="uno boton" id="uno" value="1" />
+          <input type="button" class="dos boton" id="dos" value="2" />
+          <input type="button" class="tres boton" id="tres" value="3" />
+          <input type="button" class="menos boton" id="menos" value="-" />
+          <input type="button" class="unoDivide boton" id="unoDivide" value="1/x" />
+        </div>
+        <br />
+        <div class="cuartaFila fila">
+          <input type="button" class="cero boton" id="cero" value="0" />
+          <input type="button" class="masMenos boton" id="masMenos" value="+/-" />
+          <input type="button" class="punto boton" id="punto" value="." />
+          <input type="button" class="mas boton" id="mas" value="+" />
+          <input type="button" class="igual boton" id="igual" value="=" />
+        </div>
+      </form>
+    </div>
+    <script src="Calculadora.js"></script>
+  </body>
+</html>
