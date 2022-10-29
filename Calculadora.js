@@ -22,7 +22,6 @@
     CE = document.getElementById("CE"),
     C = document.getElementById("C"),
     pantalla = document.getElementById("pantalla"),
-    boton = document.getElementsByClassName("boton"),
     retroceso = document.getElementById("retroceso");
     
     var valorPantalla = "0",
