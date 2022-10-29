@@ -147,11 +147,11 @@
     menos.addEventListener("click", function(){operacion ("-")});
     por.addEventListener("click", function(){operacion ("*")});
     divide.addEventListener("click", function(){operacion ("/")});
-    igual.addEventListener("click", function(){igualar()});
-    raiz.addEventListener("click", function(){raices()});
-    porcentaje.addEventListener("click", function(){porciento()});
-    unoDivide.addEventListener("click", function(){division()});
-    masMenos.addEventListener("click", function(){negar()});
+    igual.addEventListener("click", igualar);
+    raiz.addEventListener("click", raices);
+    porcentaje.addEventListener("click", porciento);
+    unoDivide.addEventListener("click", division);
+    masMenos.addEventListener("click", negar);
     punto.addEventListener("click", function(){escribir(".")});
 
 }());
