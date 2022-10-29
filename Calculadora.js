@@ -1,5 +1,5 @@
 (function () {
-  var uno = document.getElementById("uno"),
+  let uno = document.getElementById("uno"),
     dos = document.getElementById("dos"),
     tres = document.getElementById("tres"),
     cuatro = document.getElementById("cuatro"),
@@ -24,14 +24,14 @@
     pantalla = document.getElementById("pantalla"),
     retroceso = document.getElementById("retroceso");
     
-    var valorPantalla = "0",
+    let valorPantalla = "0",
         operacionAnterior = "no",
         escrito = true,
         valor,
         solucion,
         decimal = false;
 
-    var escribir = function ( x ) {
+    const escribir = function ( x ) {
         
         if ( valorPantalla == "0" || escrito == true ) {
             if ( x == "." ) {
@@ -60,7 +60,7 @@
         escrito = false;
     }
 
-    var borrar = function ( x ) {
+    const borrar = function ( x ) {
         if( x == 0 ) {
             valorPantalla = "0";
             valor = 0;
@@ -84,14 +84,14 @@
         pantalla.textContent = valorPantalla;
     }
     
-    var operacion = function ( x ) {
+    const operacion = function ( x ) {
         igualar();
         valor = Number(valorPantalla);
         operacionAnterior = x;
         escrito = true;
     }
 
-    var igualar = function () {
+    const igualar = function () {
         if ( operacionAnterior == "no") {
             pantalla.textContent = valorPantalla;
         }
@@ -105,25 +105,25 @@
         }
     }
     
-    var raices = function () {
+    const raices = function () {
         solucion = Math.sqrt(Number(valorPantalla));
         valorPantalla = solucion.toString();
         pantalla.textContent = valorPantalla;
     }
 
-    var porciento = function () {
+    const porciento = function () {
         solucion = Number(valorPantalla) / 100;
         valorPantalla = solucion.toString();
         pantalla.textContent = valorPantalla;
     }
 
-    var division = function () {
+    const division = function () {
         solucion = 1 / Number(valorPantalla);
         valorPantalla = solucion.toString();
         pantalla.textContent = valorPantalla;
     }
 
-    var negar = function () {
+    const negar = function () {
         solucion = "0 - " + valorPantalla;
         solucion = eval(solucion);
         valorPantalla = solucion.toString();
