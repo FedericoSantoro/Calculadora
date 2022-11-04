@@ -154,6 +154,9 @@ nueve.addEventListener("click", function () {
 cero.addEventListener("click", function () {
   escribir("0");
 });
+punto.addEventListener("click", function () {
+  escribir(".");
+});
 C.addEventListener("click", function () {
   borrar(0);
 });
@@ -180,6 +183,38 @@ raiz.addEventListener("click", raices);
 porcentaje.addEventListener("click", porciento);
 unoDivide.addEventListener("click", division);
 masMenos.addEventListener("click", negar);
-punto.addEventListener("click", function () {
-  escribir(".");
-});
+
+window.onload = function () {
+  document.onkeydown = teclaPulsada;
+  
+};
+
+const teclaPulsada = function ( tecla ) {
+  let pulsado = tecla.key.toString();
+  if ( ( tecla.key >= 0 && tecla.key < 10 ) || ( tecla.key === "." ) ) {
+    escribir (pulsado);
+  }
+  else if ( tecla.key === "+" || tecla.key === "-" || tecla.key === "*" || tecla.key === "/" ) {
+    operacion (pulsado);
+  }
+  else if ( tecla.key === "Backspace"){
+    borrar (1);
+  }
+  else if ( tecla.key === "Delete"){
+    borrar (0);
+  }
+  else if ( tecla.key === "Home"){
+    borrar (2);
+  }
+  else if ( tecla.key === "Enter"){
+    igualar();
+  }
+  /*
+  else if ( pulsado.toLowerCase() === "r" ){
+    raices();
+  }
+  else if ( tecla.key === "Enter"){
+    igualar();
+  }
+  */
+}
