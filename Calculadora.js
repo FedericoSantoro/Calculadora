@@ -216,5 +216,5 @@ const teclaPulsada = function ( tecla ) {
   else if ( tecla.key === "Enter"){
     igualar();
   }
-  */
+  */ 
 }
