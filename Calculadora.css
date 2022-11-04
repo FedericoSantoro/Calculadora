@@ -59,3 +59,21 @@ body {
     width: 18%;
 }
 
+@media screen and (max-width: 1024px) {
+    .boton {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .calculadora {
+        width: 70%;
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calculadora {
+        padding: 2%;
+    }
+}
